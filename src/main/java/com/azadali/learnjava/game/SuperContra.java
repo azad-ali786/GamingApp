@@ -1,8 +1,9 @@
 package com.azadali.learnjava.game;
 
-public class SuperContra {
+public class SuperContra implements GamingConsole {
+	
 	public void up() {
-		   System.out.println("Up");
+				   System.out.println("Up");
 	   }
 	   
 	   public void down() {

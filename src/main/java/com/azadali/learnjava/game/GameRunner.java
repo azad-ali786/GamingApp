@@ -1,23 +1,19 @@
 package com.azadali.learnjava.game;
 
 public class GameRunner {
-	MarioGame game;
-	SuperContra scGame;
+	GamingConsole game;
 
-	public GameRunner(MarioGame game) {
+	public GameRunner(GamingConsole game) {
 		this.game = game;
 	}
-	
-	public GameRunner(SuperContra scGame) {
-		this.scGame = scGame;
-	}
+
 	
 	public void run() {
-		System.out.println("Running game: " + scGame);
-		scGame.up();
-		scGame.down();
-		scGame.left();
-		scGame.right();
+		System.out.println("Running game: " + game);
+		game.up();
+		game.down();
+		game.left();
+		game.right();
 	}
 
 }
